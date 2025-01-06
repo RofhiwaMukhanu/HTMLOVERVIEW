@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0px;
+}
+
+
+nav{
+    background-color: #548B54;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+}
+
+.nav-options{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav img{
+    
+    width:50px;
+    height:50px;
+ }
+ ul{
+    display:flex;
+    list-style:none;
+    gap: 15px;
+
+ }li:hover{
+
+    cursor: poiter;
+    /* font-weight: bold; */
+    border-bottom: 2px solid yellow;
+     transition: border buttom .9s;
+ }
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-profile img{
+    border-radius: 50%;
+    border: 3px solid rgb(10, 223, 342); 
+
+
+}
+
+.user-profile label{
+
+    font-size: 12px;   
+}
+    
+.create-post{
+    background-color;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+.imageupload-submit{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 700px){
+
+    ul{
+        flex-direction: column;
+    }
+        
+    
+ }
+
+
+
+
+
+
