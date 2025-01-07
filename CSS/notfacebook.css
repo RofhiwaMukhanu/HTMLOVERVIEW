@@ -1,27 +1,36 @@
-.body {
-    font-family: Arial, sans-serif;
-    background-color:  #f4f4f4; /* light gray background
-    display: flex
+body{
+    background-color: white;
+    display: flex;
     justify-content: center;
-    aligh-items: center;
-    height: 100vh; /* full viewpoint height */
-    margin: 0;
-
+    height: 50vh;
 }
-
-/* Main Container for the login form */
-.main-container {
-    background-color: pink; /* pink background for the form */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0.2); /* subtle shadow for depth */
-    width: 350px; /* fixed width */
+img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.username{
+    flex-direction: column;
+    
+}
+.Main-container{
+    border: 1px solid green;
     text-align: center;
+    width: 400px;
+    padding: 50px;
+    background-color: purple;
+    
 }
+.username, .Email, .PhoneNumber{
+    display: flex;
+    flex-direction: column;
 
-.Main{
-text-align: center;
-background-color: pink;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
 }
 
 
