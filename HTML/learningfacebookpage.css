@@ -1,0 +1,41 @@
+body{
+   background-color: aqua; 
+   display: flex;
+   justify-content: center;
+   height: 450vh;
+   padding: 75px;
+  
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+.Main-Container{
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 4px blue;
+   width: 200px;
+   padding: 20px;
+   height: 350px; 
+   text-align: center;
+   
+    
+}
+input{
+    margin-bottom: 10px;
+}
+button {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+
+   
+    
+
+}
+
