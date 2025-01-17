@@ -4,6 +4,8 @@ body{
     justify-content: center;
     height: 450vh;
     padding: 75px;
+    padding-bottom: 20px;
+    
     
 }
 img{
@@ -21,24 +23,41 @@ img{
 .main{
     border: 1px solid green;
     text-align: center;
-    width: 200px;
+    width: 270px;
     background-color: white;
     text-align: center;
     border-radius: 5px;
     box-shadow: 4px blue;
-    padding: 20px;
+    padding: 100px;
     height: 350px;
-    
+    font-size: medium;
+    margin-bottom: 10px;
+    border: 2px solid blue;
+    padding-bottom: 150px;
 
 }
 
 input{
     margin-bottom: 10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    font-size: medium;
+
    
 }
 
 a {
-    background-color: darkgreen;
     border-radius: 5px;
     padding: 2px;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.register{
+    background-color: darkgreen;
+    width: 250px;
+    height: 40px;
 }

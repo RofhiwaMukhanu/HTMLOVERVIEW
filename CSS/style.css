@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
 
 
 *{
@@ -12,91 +12,432 @@ nav{
     background-color: #548B54;
     display: flex;
     justify-content:space-between;
-    padding: 5px;
-}
-
-.nav-options{
-    display: flex;
-    align-items: center;
     
 }
-
 nav img{
     
     width:50px;
     height:50px;
- }
+}
+.nav-options{
+    display: flex;
+    align-items: center;
+    
+
+}
+.Class p{
+    color: dark black;
+    margin-left: 50px;
+    gap: 50px;
+}
+
  ul{
     display:flex;
     list-style:none;
     gap: 15px;
-
- }li:hover{
-
-    cursor: poiter;
-    /* font-weight: bold; */
-    border-bottom: 2px solid yellow;
-     transition: border buttom .9s;
  }
 
+ li{
+
+    cursor: pointer;
+    border-bottom: 2px solid black;
+     transition: border buttom .9s;
+ }
+     @media only screen and (max-width: 700px) {
+        ul {
+            flex-direction: column;
+        }
+     }
+
 .user-profile {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
 }
 .user-profile img{
     border-radius: 50%;
-    border: 3px solid rgb(10, 223, 342); 
-
-
+    border: 3px solid light blue; 
 }
-
-.user-profile label{
-
-    font-size: 12px;   
-}
-    
-.create-post{
-    background-color;
-    height: 350px;
+.Jayden img {
+    height: 100px;
     display: flex;
     flex-direction: column;
+    margin-right: 100px;
+   
 }
+
+
+.profiles img{
+    border-radius: 50%;
+    
+}
+.Jayden img{
+    border-radius: 50%;
+    border: 3px solid light blue;
+
+}
+.user-profile label{
+
+    font-size: 5px; 
+
+}
+#followBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #followBtn.following {
+    background-color: rgb(0, 128, 0); 
+    
+  }
+
+.create-post{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
 textarea{
     width: 100%;
-    height: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: medium;
+    font-style: initial;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    
+
+}
+.add-photo{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    
+}
+
+.submit-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 20px;
+
+}
+
+a {
+    color:black
+}
+
+
+
+h1{
+color: #548B54;
+font-size: 24px;
+margin-bottom: 10px;
 
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 5px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 1);
+    margin-bottom: 15px;
+    
 }
-.imageupload-submit{
+
+textarea.input-box{
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    box-sizing: border-box;
+
+}
+
+button{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    background-color: green;
+}
+
+.file-input{
+    display: none;
+}
+
+.file label{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition; background-color: #548B54;
+    text-align: center;
+    
+}
+
+.file-label i{
+    margin-right: 5px;
+}
+
+.file-label:hover{
+    background-color: #548b54;
+}
+
+.submit-button{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #548B54;
+    border: none;
+    width: 150px;
+    text-align: center;
+    height: 25px;
+    margin-left: 1280px;
+    margin-top: -25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; 
+    padding-top: 4px;
+    
+}
+.submit-button i{
+    margin-right: 5px;
+
+}
+.submit-button:hover{
+    background-color: #548B54;
+}
+
+.slides{
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+.profile{
+    flex: 0 0 auto;
+    text-align: center;
+    width: 120px;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.name{
+    margin: 8px o 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(9, 2, 2);
+    text-decoration: none;
 }
 
 
+.follow-btn{
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color:#548B54;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+follow-button.following {
+    color: white;  
+    background-color: green;
+    border: 1px solid #0056b3;  
+}
 
+  .follow-btn:hover{
+    background-color: #548B54;
+  }  
+   
+.slider{
+    display: flex;
+    overflow: scroll;
+}
 
+.post-profile{
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.btn-group{
+    display: flex;
+    gap: 50px;
+    width: 200px;
 
-
-
-
- @media only screen and (max-width: 700px){
-
-    ul{
-        flex-direction: column;
-    }
-        
     
+}
+.img.p{
+    height: 50px;
+}
+ .input-box2{
+    width: 500px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
  }
 
+ .username{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 50px;
+    display: flex;
+    text-align: right;
+ }
 
+ ._row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
 
+ .post{
+    display: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+ }
 
+ .post image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+ }
 
+ .btn-group{
+    display: flex;
+    gap: 50px;
+    color: aqua;
+ }
 
+ .btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .btn-like{
+    background-color: #548B54;
+ }
+
+ .btn-like:hover{
+background-color: #548B54;
+ }
+
+ .btn-comment{
+    background-color: #548B54;
+ }
+
+ .btn-comment:hover{
+    background-color: #548B54;
+ }
+ 
+ btn-share{
+    background-color: #548B54;
+ }
+
+ .btn-share:hover{
+    background-color: #548B54;
+ }
+
+ .notification-badge{
+    display: inline-block;
+    background-color: #548B54;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    position: relative;
+    top: -8px;
+    left: 5px;
+
+ }
+
+ .nav-options ul li{
+    display: inline-block;
+ }
+
+ .nav-options ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: beige;
+    position: relative;
+ }
+
+ .nav-options ul li a:hover{
+    color: #548B54;
+ }
+
+ .nav-options ul li i{
+    margin-right: 5px;
+ }
+
+ .user-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .user-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+ }
+
+ .user-profile label{
+    font-size: 14px;
+    color: blueviolet;
+ }
+
+ .poster{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ 

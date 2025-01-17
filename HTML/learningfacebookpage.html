@@ -7,47 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="Main-Container">
-
-<h1>Login</h1>
 
 
-<img src="https://cdn.dribbble.com/users/5177293/screenshots/15966027/media/7d08f8b9825606c2a4fc8c71caebd7a9.png">
+  <div class="Main-Container">
+    <h1>Login</h1>
 
-    <div class="Email/Username">Email/Username</div>
-<input type="text" placeholder="enter your username">
+    <img src="https://cdn.dribbble.com/users/5177293/screenshots/15966027/media/7d08f8b9825606c2a4fc8c71caebd7a9.png">
 
-<div class="Password">Password</div>
-<input type="text" placeholder="enter your password">
+    <form id="loginForm">
+        <div>
+            <div class="Email/Username">Email/Username</div>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <span id="usernameError" style="color: red; display: none;">Please enter a valid username or email</span>
+        </div>
 
-   <div>
+        <div>
+            <div class="Password">Password</div>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <span id="passwordError" style="color: red; display: none;">Please enter your password</span>
+        </div>
 
-     <a href="#">Forget Password</a>
+        <div class="forgot-password">
+            <a href="http://127.0.0.1:5500/HTML/Forgetpassword.html">Forgot password?</a> 
+        </div>
 
-   </div>
+        <div class="">
+            <button   class="loginn" type="submit">Login</button>
+        </div>
 
-     <div>
-
-      <button> <a href="http://127.0.0.1:5500/HTML/index.html">Sign In</a></button>
- 
-   </div>
-
-<div>
-
-  <div class="Dont have account?"></div> <p1>Dont have an account?</p1> <a href="http://127.0.0.1:5500/HTML/Register.html">register</a> 
-
+        <div class="Donthave-account">
+            <p1>Don't have an account?</p1> <a href="http://127.0.0.1:5500/HTML/Register.html">Register</a> 
+        </div>
+    </form>
 </div>
-  
     
 
- </div>
+ <script src="/JS/login.js" ></script>
 
 
-
-
-
-
-       </div>  
 
 
 </body>

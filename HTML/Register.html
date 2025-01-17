@@ -12,33 +12,37 @@
         <h1>Register</h1>
 
         <img src="https://cdn.dribbble.com/users/5177293/screenshots/15966027/media/7d08f8b9825606c2a4fc8c71caebd7a9.png?resize=1600x1200&vertical=center">
-        <div>
-          
-            <div class="Username">Username</div>
-            <input type="text" placeholder="Enter your username">
-            
-            <div class="Email">Email</div>
-            <input type="text" placeholder="Enter your email">
-            
-            <div class="Phone number">Phone number</div>
-            <input type="text" placeholder="Enter your phone number">
 
-            
+        <form id="registerForm">
+            <div>
+                <div class="Username">Username</div>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <span id="usernameError" style="color: red; display: none;">Please enter a valid username</span>
+            </div>
 
-            <p1>Already have an account?</p1> <a href="http://127.0.0.1:5500/HTML/learningfacebookpage.html">Login.</a>
-        </div>
-    
+            <div>
+                <div class="Email">Email</div>
+                <input type="text" id="email" placeholder="Enter your email" required>
+                <span id="emailError" style="color: red; display: none;">Please enter a valid email address</span>
+            </div>
 
-        
+            <div>
+                <div class="Phone number">Phone number</div>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+                <span id="phoneError" style="color: red; display: none;">Please enter a valid phone number</span>
+            </div>
 
-       
+            <div class="Register">
+                <button  class="register" type="submit">Register</button>
+            </div>
 
-     
-            
-            
-            
-            
+            <div class="Already have an account?">
+                <p>Already have an account? <a href="http://127.0.0.1:5500/HTML/learningfacebookpage.html">Login</a></p>
+            </div>
+        </form>
     </div>
+
+    <script src="/JS/register.js"></script>
 </body>
 </html>
 
