@@ -1,13 +1,13 @@
 // script.js
 
-// Get the elements
+
 const submitButton = document.getElementById('submit-button');
 const postTextArea = document.getElementById('post-text');
 const postImageInput = document.getElementById('post-image');
 
-// Function to check if the Submit button should be enabled
+
 function checkSubmitButton() {
-    // Enable submit button if there's text or if a file is selected
+    
     if (postTextArea.value.trim() !== '' || postImageInput.files.length > 0) {
         submitButton.disabled = false;
     } else {
@@ -15,25 +15,25 @@ function checkSubmitButton() {
     }
 }
 
-// Event listener to check if the textarea has input
+
 postTextArea.addEventListener('input', checkSubmitButton);
 
-// Event listener to check if a file is uploaded
+
 postImageInput.addEventListener('change', checkSubmitButton);
 
-// Handle the Submit button click event
-submitButton.addEventListener('click', function(e) {
-    e.preventDefault();  // Prevent page refresh (in case the form is submitted)
 
-    // Get the text from the textarea and file input
+submitButton.addEventListener('click', function(e) {
+    e.preventDefault();  
+
+    
     const postText = postTextArea.value.trim();
     const postImage = postImageInput.files[0];
 
-    // Create the new post (assuming you have a posts container)
+    
     const newPost = document.createElement('div');
     newPost.classList.add('post');
     
-    // Handle the post content
+    
     let postContent = `<p>${postText}</p>`;
     
     if (postImage) {
@@ -58,13 +58,13 @@ submitButton.addEventListener('click', function(e) {
         </div>
     `;
 
-    // Add the new post to the posts container (you can prepend or append it)
+    
     document.getElementById('posts-container').prepend(newPost);
 
-    // Clear the form
+    
     postTextArea.value = '';
     postImageInput.value = '';
-    submitButton.disabled = true; // Disable the submit button again
+    submitButton.disabled = true; 
 });
 
 console.log("trd")
